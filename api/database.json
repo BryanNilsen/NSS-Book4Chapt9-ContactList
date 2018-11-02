@@ -7,13 +7,10 @@
       "phone": "555-1234"
     },
     {
+      "name": "Tony Stark",
+      "address": "the moon",
+      "phone": "58585",
       "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "id": 4
     }
   ]
 }
