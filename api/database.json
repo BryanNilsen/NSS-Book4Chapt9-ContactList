@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {
+      "id": 1,
+      "name": "Bryan Nilsen",
+      "address": "11 Maple Avenue",
+      "phone": "555-1234"
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    }
+  ]
+}

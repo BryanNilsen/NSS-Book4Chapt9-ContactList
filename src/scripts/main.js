@@ -1,8 +1,11 @@
-import sayHello from "./hello"
-import sayGoodbye from "./goodbye"
-import SandwichMaker from "./sandwichMaker"
+import makeContactList from "./contactList"
+import contactFormEvents from "./contactForm"
+// import (functionName from contactForm) from "./contactForm"
 
-sayHello()
-sayGoodbye()
+// take entries from form and post them to database
+contactFormEvents()
 
-SandwichMaker.placeOrder("rye", "capicola", "provolone")
+
+// populate content from the contact list
+makeContactList.makeList()
+makeContactList.console()
