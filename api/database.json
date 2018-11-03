@@ -11,6 +11,12 @@
       "address": "the moon",
       "phone": "58585",
       "id": 2
+    },
+    {
+      "name": "bart simpson",
+      "address": "home lane",
+      "phone": "123",
+      "id": 3
     }
   ]
 }

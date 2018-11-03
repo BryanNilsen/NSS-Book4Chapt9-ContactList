@@ -1,7 +1,4 @@
-export default contactElement
-
-let contactElement = {
-// build individual contact element here
-contactInfo: `<h2>Contact Details:</h2><p>${name}</p><p>${address}</p><p>${phone}</p>`
-
+const makeContactComponent = (contactEntry) => {
+    return`<p>Name: ${contactEntry.name}, Address: ${contactEntry.address}, Phone: ${contactEntry.phone}</p>`
 }
+export default makeContactComponent

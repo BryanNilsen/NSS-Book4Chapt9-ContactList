@@ -7,24 +7,36 @@
     <title>Browserify Boilerplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
 
     <h1>Check out these Awesome Contacts!!</h1>
     <!-- begin contact form -->
     <section id="ContactInputForm">
         <h2>Enter a New Contact</h2>
-        <label for="">Name</label>
-        <input type="text" name="name" id="formName">
-        <label for="">Address</label>
-        <input type="text" name="address" id="formAddress">
+        <div>
+            <label for="">Name</label>
+            <input type="text" name="name" id="formName">
+        </div>
+        <div>
+            <label for="">Address</label>
+            <input type="text" name="address" id="formAddress">
+        </div>
         <label for="">Phone Number</label>
         <input type="tel" name="" id="formPhone">
-        <input type="button" value="Submit" name="formSubmit" id="formSubmit">
+        <div>
+            <input type="button" value="Submit" name="formSubmit" id="formSubmit">
+        </div>
     </section>
-    <article class="output">
-        <h2>Contact List</h2>
+    <!-- end contact form -->
+
+    <!-- begin contact output -->
+    <h2>Contact List</h2>
+    <article id="output">
+
         <!-- entries from contactList.js go here -->
     </article>
+    <!-- end contact output -->
 
     <script src="bundle.js"></script>
 </body>

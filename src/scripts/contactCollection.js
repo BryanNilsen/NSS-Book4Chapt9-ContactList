@@ -1,11 +1,8 @@
-const contactData = {
-    // get entries
-    getContacts: () => {
+let contactData = {
+
+    getContacts () {
         return fetch("http://localhost:8088/entries")
-        .then(contacts => contacts.json())
-        .then(parsedContacts => {
-            console.table(parsedContacts)
-        })
+            .then(response => response.json())
     },
     postContacts: (eachContact) => {
         return fetch("http://localhost:8088/entries", {
@@ -15,7 +12,6 @@ const contactData = {
         },
         body: JSON.stringify(eachContact)// << contactToSave goes in parentheses
     })}
-
 }
 
 export default contactData

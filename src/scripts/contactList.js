@@ -1,14 +1,28 @@
+// the following allows access to the contacts in the database
 import contactData from "./contactCollection"
-// import (functionName from contact.js) from "./contact"
+import makeContactComponent from "./contact"
 
-const makeContactList = {
-    /* this will get results from contactCollection.js
-    take those results and then use the function from contact.js to make an entry for each contact in the database
-    */
-    makeList: () => {
-        let contactsArray = [contactData.getContacts()]
-        console.log(contactsArray)
-    },
-    console: () => {console.log("hello!")}
+
+let articleElement = document.querySelector("#output")
+
+function makeContactList(contactEntries) {
+    contactEntries.forEach((contact) =>{
+        let newContactDiv = document.createElement("div");
+        let contactContents = makeContactComponent(contact);
+        newContactDiv.innerHTML = contactContents;
+        articleElement.appendChild(newContactDiv)
+    })
 }
-export default makeContactList
+
+function clearContacts(){
+    articleElement.innerHTML = ""
+}
+
+
+const populatePage = () => {
+    clearContacts(),
+    contactData.getContacts().then(contacts => makeContactList(contacts))
+}
+
+
+export default populatePage
