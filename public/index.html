@@ -6,26 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Browserify Boilerplate</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
 
-    <h1>Check out these Awesome Contacts!!</h1>
+
+    <h1>Awesome Contacts!!</h1>
     <!-- begin contact form -->
-    <section id="ContactInputForm">
+    <section id="ContactInputForm" class="contactForm">
         <h2>Enter a New Contact</h2>
         <div>
             <label for="">Name</label>
-            <input type="text" name="name" id="formName">
+            <input type="text" name="name" id="formName" placeholder="Who Are You?">
         </div>
         <div>
             <label for="">Address</label>
-            <input type="text" name="address" id="formAddress">
+            <input type="text" name="address" id="formAddress" placeholder="Where Are You?">
         </div>
         <label for="">Phone Number</label>
-        <input type="tel" name="" id="formPhone">
+        <input type="tel" name="" id="formPhone" placeholder="What's Your Number?">
         <div>
-            <input type="button" value="Submit" name="formSubmit" id="formSubmit">
+            <input type="button" value="Add New Contact" name="formSubmit" id="formSubmit">
         </div>
     </section>
     <!-- end contact form -->

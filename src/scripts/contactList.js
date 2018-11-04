@@ -8,6 +8,7 @@ let articleElement = document.querySelector("#output")
 function makeContactList(contactEntries) {
     contactEntries.forEach((contact) =>{
         let newContactDiv = document.createElement("div");
+        newContactDiv.classList.add("contact");
         let contactContents = makeContactComponent(contact);
         newContactDiv.innerHTML = contactContents;
         articleElement.appendChild(newContactDiv)
