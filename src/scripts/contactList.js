@@ -2,7 +2,6 @@
 import contactData from "./contactCollection"
 import makeContactComponent from "./contact"
 
-
 let articleElement = document.querySelector("#output")
 
 function makeContactList(contactEntries) {
@@ -19,11 +18,9 @@ function clearContacts(){
     articleElement.innerHTML = ""
 }
 
-
 const populatePage = () => {
     clearContacts(),
     contactData.getContacts().then(contacts => makeContactList(contacts))
 }
-
 
 export default populatePage

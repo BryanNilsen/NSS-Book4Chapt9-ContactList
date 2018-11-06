@@ -5,6 +5,12 @@
       "address": "Bushwood Country Club",
       "phone": "615-GOPHER",
       "id": 1
+    },
+    {
+      "name": "Tyler Durden",
+      "address": "Anywhere USA",
+      "phone": "555-FIGHT",
+      "id": 2
     }
   ]
 }

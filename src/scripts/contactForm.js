@@ -2,12 +2,13 @@
 // only postContacts is currently used
 import contactData from "./contactCollection"
 
+// the following function submits the form input from the user and posts them to the JSON database
 const contactFormEvents = function submitForm(){
         // the following identifies the form inputs from index.html
         const formName = document.querySelector("#formName")
         const formAddress = document.querySelector("#formAddress")
         const formPhone = document.querySelector("#formPhone")
-        // the following creates empty object for form inputs
+        // the following creates empty object for the form inputs
         let eachContact = {
             name: "",
             address: "",

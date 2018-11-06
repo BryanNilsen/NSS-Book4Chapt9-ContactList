@@ -18,6 +18,19 @@ body {
 
 }
 
+.contact {
+  text-align: left;
+  margin: auto;
+  margin-bottom: 10px;
+  background: white;
+  max-width: 40%;
+  padding: 0 20px 20px 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 1em;
+  color: rgb(61, 61, 136);
+}
+
 input {
   margin: 5px;
   border: 1px solid #999;
@@ -47,17 +60,4 @@ input[type=button]:hover {
   font-size: .8em;
   padding: 3px 10px;
   -webkit-appearance: none;
-}
-
-.contact {
-  text-align: left;
-  margin: auto;
-  margin-bottom: 10px;
-  background: white;
-  max-width: 40%;
-  padding: 0 20px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  font-size: 1em;
-  color: rgb(61, 61, 136);
 }
